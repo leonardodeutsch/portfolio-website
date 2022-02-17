@@ -16,7 +16,7 @@ export const Contact = () => {
         </div>
         <a className="email" href="mailto:deutschleonardo@gmail.com">deutschleonardo@gmail.com</a>
         <div className="contact-links">
-          <a className="contact-link" href="https://github.com/leonardodeutsch" target="_blank">
+          <a className="contact-link" href="https://github.com/leonardodeutsch" target="_blank" aria-label="Github">
             <div className="contact-button">
               <div className="contact-icon">
                 <i className="fa-brands fa-github-alt"></i>
@@ -24,7 +24,7 @@ export const Contact = () => {
               <span>Github</span>
             </div>
           </a>
-          <a className="contact-link" href="https://www.linkedin.com/in/leonardodeutsch/" target="_blank">
+          <a className="contact-link" href="https://www.linkedin.com/in/leonardodeutsch/" target="_blank" aria-label="LinkedIn">
             <div className="contact-button">
               <div className="contact-icon">
               <i className="fa-brands fa-linkedin-in"></i>
@@ -32,7 +32,7 @@ export const Contact = () => {
               <span>LinkedIn</span>
             </div>
           </a>
-          <a className="contact-link" href="https://twitter.com/CassieI_" target="_blank">
+          <a className="contact-link" href="https://twitter.com/CassieI_" target="_blank" aria-label="Twitter">
             <div className="contact-button">
               <div className="contact-icon">
               <i className="fa-brands fa-twitter"></i>
@@ -40,7 +40,7 @@ export const Contact = () => {
               <span>Twitter</span>
             </div>
           </a>
-          <a className="contact-link" href="https://twitch.tv/cassiel_" target="_blank">
+          <a className="contact-link" href="https://twitch.tv/cassiel_" target="_blank" aria-label="Twitch">
             <div className="contact-button">
               <div className="contact-icon">
               <i className="fa-brands fa-twitch"></i>

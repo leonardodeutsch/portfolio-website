@@ -16,24 +16,24 @@ export const NavBar: React.FC<Props> = ({currentSection}) => {
     <nav id="navbar">
       <ul>
         <li>
-          <a className={`dot ${currentSection === 0 ? 'active' : ''}`} data-name="home" onClick={handleClick}>
+          <main className={`dot ${currentSection === 0 ? 'active' : ''}`} data-name="home" onClick={handleClick}>
             <span>Home</span>
-          </a>
+          </main>
         </li>
         <li>
-          <a className={`dot ${currentSection === 0.25 ? 'active' : ''}`} data-name="about" onClick={handleClick}>
+          <main className={`dot ${currentSection === 0.25 ? 'active' : ''}`} data-name="about" onClick={handleClick}>
             <span>About</span>
-          </a>
+          </main>
         </li>
         <li>
-          <a className={`dot ${currentSection === 0.5 ? 'active' : ''}`} data-name="projects" onClick={handleClick}>
+          <main className={`dot ${currentSection === 0.5 ? 'active' : ''}`} data-name="projects" onClick={handleClick}>
             <span>Projects</span>
-          </a>
+          </main>
         </li>
         <li>
-          <a className={`dot ${currentSection === 0.75 ? 'active' : ''}`} data-name="contact" onClick={handleClick}>
+          <main className={`dot ${currentSection === 0.75 ? 'active' : ''}`} data-name="contact" onClick={handleClick}>
             <span>Contact</span>
-          </a>
+          </main>
         </li>
       </ul>
     </nav>
