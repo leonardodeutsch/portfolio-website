@@ -1,0 +1,21 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  position: fixed;
+  left: 45%;
+  top: 12%;
+  transform: scale(2.0);
+  object-fit: cover;
+  opacity: 0.8;
+}

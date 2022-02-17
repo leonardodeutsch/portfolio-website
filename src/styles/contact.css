@@ -1,0 +1,93 @@
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+.email {
+  width: 26rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.1px;
+  transition: all .3s ease-out;
+}
+
+.contact-content a:hover {
+  color: rgb(145, 145, 145);
+}
+
+.contact-links {
+  display: flex;
+  height: 66px;
+}
+
+.contact-button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-out;
+  color: #061425;
+  overflow: hidden;
+}
+
+.contact-button:hover {
+  width: 200px;
+  overflow: visible;
+  box-shadow: inset 1px 1px 5px 2px #fff, inset -2px -2px 5px 2px rgb(0 0 0 / 30%);
+}
+
+.contact-button:hover span {
+  visibility: visible;
+}
+
+.contact-button:hover .contact-icon {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.contact-icon {
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+
+.contact-icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.contact-button span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 30px;
+  line-height: 60px;
+  visibility: hidden;
+}
+
+.contact-link:nth-child(1) .contact-button:hover .contact-icon {
+  background: rgb(26, 26, 26);
+}
+
+.contact-link:nth-child(2) .contact-button:hover .contact-icon {
+  background: #0077b5;
+}
+
+.contact-link:nth-child(3) .contact-button:hover .contact-icon {
+  background: #1da1f2;
+}
+
+.contact-link:nth-child(4) .contact-button:hover .contact-icon {
+  background: #9146ff;
+}

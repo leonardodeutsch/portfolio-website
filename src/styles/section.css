@@ -1,0 +1,27 @@
+.section-title {
+  font-size: 7rem;
+  margin: 0;
+  text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+}
+
+.separator-container {
+  margin: 1rem 0;
+}
+
+.separator-container span{
+  display: block;
+  background: #ff4d5a;
+  height: 5px;
+
+  border-radius: 5px;
+}
+
+.top-separator {
+  width: 250px;
+}
+
+.bottom-separator {
+  width: 250px;
+  margin-top: 1.4rem;
+  margin-left: 120px;
+}

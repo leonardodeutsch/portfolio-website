@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 const config = {
   entry: './src/index.tsx',
@@ -42,11 +43,31 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              mimetype: 'image/png'
+              mimetype: 'image/png',
+              esModule: false
             }
           }
         ]
-      }
+      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   use: [
+      //     {
+      //       loader: ImageMinimizerPlugin.loader,
+      //       // enforce: "pre",
+      //       options: {
+      //         minimizer: {
+      //           implementation: ImageMinimizerPlugin.imageminMinify,
+      //           options: {
+      //             plugins: [
+      //               "imagemin-pngquant"
+      //             ],
+      //           },
+      //         },
+      //       },
+      //     },
+      //   ],
+      // },
     ]
   },
   resolve: {
@@ -55,7 +76,24 @@ const config = {
       '.ts',
       '.js'
     ]
-  }
+  },
+  // optimization: {
+  //   minimizer: [
+  //     "...",
+  //     new ImageMinimizerPlugin({
+  //       minimizer: {
+  //         implementation: ImageMinimizerPlugin.imageminMinify,
+  //         options: {
+  //           // Lossless optimization with custom option
+  //           // Feel free to experiment with options for better result for you
+  //           plugins: [
+  //             ["optipng", { optimizationLevel: 5 }]
+  //           ],
+  //         },
+  //       },
+  //     }),
+  //   ],
+  // },
 };
 
 module.exports = config;
