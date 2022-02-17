@@ -11,7 +11,8 @@ export const Projects = () => {
   const options = {
     reverse: true,
     glare: true,
-    max: 10
+    max: 10,
+    gyroscope: false
   }
 
   return (
