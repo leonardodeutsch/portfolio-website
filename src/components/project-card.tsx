@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import * as githubLogo from '../images/Github.png';
+import * as websiteLogo from '../images/Website.png';
 
 
 interface Project {
@@ -9,6 +10,7 @@ interface Project {
   tech: string;
   description: string;
   links: string;
+  website: string;
   logo: any;
 }
 interface Props {
@@ -40,7 +42,13 @@ export const ProjectCard: React.FC<Props> = (props) => {
         <a className="link-button" href={props.project.links} target="_blank">
           <img src={githubLogo} alt="Github Logo"></img>
           <span className="link-button-name">Github</span>
-        </a> 
+        </a>
+        {props.project.website &&
+          <a className="link-button" href={props.project.website} target="_blank">
+            <img src={websiteLogo} alt="Website Logo"></img>
+            <span className="link-button-name">Website</span>
+          </a> 
+        } 
       </div>
       <div className="js-tilt-glare" >
         <div className="js-tilt-glare-inner"></div>
